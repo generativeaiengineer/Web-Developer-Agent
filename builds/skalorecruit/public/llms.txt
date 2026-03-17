@@ -1,0 +1,21 @@
+# SkaloRecruit
+
+> Premium executive recruitment agency connecting exceptional talent with leading employers in London's finance and technology sectors.
+
+SkaloRecruit is a specialist executive recruitment agency based in the City of London. Founded in 2009, we connect senior professionals in financial services, technology, and professional services with leading employers across the UK and Europe. Our consultants have deep sector knowledge and direct access to passive candidates that traditional job boards cannot reach.
+
+## Services
+- Executive Search: Retained search for C-suite and Director-level appointments
+- Permanent Recruitment: Manager to Director level across finance and technology
+- Contract & Interim: Flexible specialist staffing from 3 months to 2 years
+
+## Key Information
+- Founded: 2009
+- Location: 30 St Mary Axe, London, EC3A 8BF
+- Contact: hello@skalorecruit.com
+- Phone: +44 20 7946 0958
+
+## Pages
+- [Homepage](https://skalorecruit.com/)
+- [For Employers](https://skalorecruit.com/services)
+- [Contact](https://skalorecruit.com/contact)

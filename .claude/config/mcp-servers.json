@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "@21st-dev/magic": {
+      "description": "Premium UI component generation — thousands of components from top design engineers",
+      "status": "active",
+      "requires": "API key from https://21st.dev → Settings → API Keys",
+      "usage_examples": [
+        "Create a modern hero section with gradient background",
+        "Build a pricing table with 3 tiers and annual/monthly toggle",
+        "Design a testimonial carousel with avatars",
+        "Generate a sticky navigation with smooth scroll"
+      ]
+    }
+    ,
+    "firecrawl": {
+      "description": "Web scraping and crawling — used by Researcher Mode to analyze competitor sites",
+      "status": "active",
+      "requires": "API key from https://firecrawl.dev",
+      "usage": "Scrapes pages for design patterns, content structure, SEO elements"
+    }
+  }
+}

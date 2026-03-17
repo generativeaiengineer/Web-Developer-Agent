@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "description": "WD-01 minimum quality standards for all produced websites",
+
+  "lighthouse": {
+    "performance": { "min": 90 },
+    "seo": { "min": 95 },
+    "accessibility": { "min": 90 },
+    "best_practices": { "min": 90 }
+  },
+
+  "core_web_vitals": {
+    "lcp": { "max_ms": 2500, "label": "Largest Contentful Paint" },
+    "cls": { "max": 0.1, "label": "Cumulative Layout Shift" },
+    "inp": { "max_ms": 200, "label": "Interaction to Next Paint" },
+    "fcp": { "max_ms": 1800, "label": "First Contentful Paint" }
+  },
+
+  "seo": {
+    "title_tag": {
+      "min_chars": 50,
+      "max_chars": 60,
+      "required": true
+    },
+    "meta_description": {
+      "min_chars": 150,
+      "max_chars": 160,
+      "required": true
+    },
+    "og_tags": {
+      "required": ["og:title", "og:description", "og:image", "og:url"],
+      "required": true
+    },
+    "canonical_url": { "required": true },
+    "robots_meta": { "required": true },
+    "heading_hierarchy": {
+      "single_h1": true,
+      "no_skipped_levels": true
+    },
+    "schema_markup": {
+      "required_types": ["Organization", "WebPage"],
+      "format": "JSON-LD"
+    }
+  },
+
+  "accessibility": {
+    "wcag_level": "AA",
+    "wcag_version": "2.1",
+    "requirements": {
+      "alt_text_all_images": true,
+      "color_contrast_min_ratio": 4.5,
+      "keyboard_navigable": true,
+      "focus_states_visible": true,
+      "aria_labels_interactive": true,
+      "skip_navigation_link": true
+    }
+  },
+
+  "code": {
+    "typescript_strict": true,
+    "no_console_errors": true,
+    "no_unused_imports": true,
+    "build_must_pass": true
+  },
+
+  "responsive": {
+    "mobile_first": true,
+    "breakpoints": {
+      "mobile": "320px",
+      "tablet": "768px",
+      "desktop": "1024px",
+      "wide": "1280px"
+    },
+    "no_horizontal_scroll": true
+  }
+}
