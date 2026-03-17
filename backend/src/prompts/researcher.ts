@@ -26,8 +26,8 @@ ${templateContent}
 ## Tool Usage Instructions
 
 You have access to the \`firecrawl_scrape\` tool. Use it to scrape each provided URL.
-Scrape at minimum: homepage (/), about page, services/products page for BRANDING sites.
-Scrape homepage and 2 inner pages for SEO sites.
+
+IMPORTANT: Scrape ONLY the exact URLs provided by the user. Do NOT discover or visit any additional pages (no About, Services, Contact, sub-pages, sitemaps, robots.txt, or any other URLs). One scrape call per provided URL — nothing more.
 
 After scraping all sites, generate the complete blueprint document following the template above.
 Save the blueprint by outputting it as your final text response — the system will save it to disk.

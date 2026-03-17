@@ -113,11 +113,8 @@ Perform this process for **each BRANDING URL**. If multiple branding URLs, run t
 
 ### 2.1 — Scraping with Firecrawl
 
-**Pages to scrape per branding site:**
-1. Homepage (`/`)
-2. About or Team page (look for `/about`, `/about-us`, `/team`)
-3. Services or Product page (look for `/services`, `/work`, `/products`)
-4. Contact page if accessible (`/contact`)
+**Pages to scrape:**
+Scrape ONLY the exact URLs provided by the user. Do not discover or visit any additional pages (no About, Services, Contact, or any other sub-pages).
 
 **Firecrawl instructions:**
 - Use the `firecrawl` MCP tool to scrape each page
@@ -304,12 +301,8 @@ Perform this process for **each SEO URL**.
 
 ### 3.1 — Scraping with Firecrawl
 
-**Pages to scrape per SEO site:**
-1. Homepage (`/`)
-2. Two service/product pages (highest-value pages)
-3. One blog post or article (if present)
-4. `/sitemap.xml` — fetch directly
-5. `/robots.txt` — fetch directly
+**Pages to scrape:**
+Scrape ONLY the exact URLs provided by the user. Do not discover or visit any additional pages, sub-pages, sitemaps, or robots.txt.
 
 **For each page, extract the raw HTML** — you need to read `<head>` contents and `<body>` structure.
 

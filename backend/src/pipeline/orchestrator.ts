@@ -14,6 +14,7 @@ import {
   summarizeBlueprint,
   summarizeArchitecture,
 } from '../utils/telegram-helpers.js';
+import { deployToSurge } from '../utils/deploy.js';
 
 export type SendFn = (text: string, options?: SendOptions) => Promise<number | void>;
 
@@ -193,15 +194,21 @@ export async function runBuilderPhase(chatId: number, send: SendFn): Promise<voi
       buildReportPath: result.buildReportPath,
     });
 
+    // Auto-deploy to Surge.sh for instant public preview
+    let previewUrl = '';
+    if (result.success) {
+      await send('🚀 Deploying preview...');
+      const deploy = deployToSurge(result.buildDir, sanitize(session.clientName));
+      if (deploy.success) previewUrl = deploy.url;
+    }
+
     const statusEmoji = result.success ? '✅' : '⚠️';
     await send(
       `${statusEmoji} *Build complete for ${session.clientName}!*\n\n` +
-      `📁 Build directory: \`${result.buildDir}\`\n\n` +
-      `*To preview locally:*\n` +
-      `\`\`\`\ncd "${result.buildDir}"\nnpm run preview\n\`\`\`\n\n` +
-      `*To deploy:*\n` +
-      `\`\`\`\n./scripts/deploy.sh --server [IP] --domain [domain] --build-dir "${result.buildDir}/dist" --ssl\n\`\`\`\n\n` +
-      `Run /status for the full build report.`,
+      (previewUrl
+        ? `🌐 *Preview URL:*\n${previewUrl}\n\n`
+        : `📁 *Build directory:* \`${result.buildDir}\`\n\n`) +
+      `_Run /status for the full build report._`,
       { parseMode: 'Markdown' },
     );
   } catch (err: unknown) {
