@@ -4,7 +4,7 @@
 **Reviewed By:** WD-01
 **Live URL:** [URL]
 
-Complete all 25 points before delivery. Mark each ✅ PASS or ❌ FAIL with notes.
+Complete all 23 points before delivery. Mark each ✅ PASS or ❌ FAIL with notes.
 
 ---
 
@@ -127,20 +127,6 @@ Complete all 25 points before delivery. Mark each ✅ PASS or ❌ FAIL with note
 
 ---
 
-## DEPLOYMENT (2 points)
-
-- [ ] **DEP1 — HTTPS/SSL configured and working**
-  - Site loads on `https://` without browser security warning
-  - HTTP redirects to HTTPS (301)
-  - SSL certificate is valid and not expiring within 30 days
-
-- [ ] **DEP2 — Site loads correctly on the live domain**
-  - Visit live URL — no 502/503/404 on homepage
-  - All assets load (no mixed content warnings)
-  - Test from a private/incognito window with no cache
-
----
-
 ## SIGN-OFF
 
 | Section | Points Passed | Points Failed |
@@ -149,8 +135,7 @@ Complete all 25 points before delivery. Mark each ✅ PASS or ❌ FAIL with note
 | SEO | /8 | |
 | Design & UX | /6 | |
 | Technical | /4 | |
-| Deployment | /2 | |
-| **Total** | **/25** | |
+| **Total** | **/23** | |
 
 **Failed items (must resolve before delivery):**
 - [ ] [item] — [description of issue]

@@ -1590,20 +1590,8 @@ Site-wide:
 
 ---
 
-## Deployment
+## Post-Build QA
 
-Ready to deploy to Digital Ocean + Nginx.
-
-**Deploy command:**
-```bash
-./scripts/deploy.sh \
-  --server [IP from client] \
-  --domain [domain] \
-  --build-dir builds/[client-name]/dist \
-  --ssl
-```
-
-**Post-deploy:**
 1. Run Lighthouse check: `./scripts/lighthouse-check.sh https://[domain]`
 2. Complete QA checklist: `qa/checklists/qa-checklist.md`
 3. Submit sitemap in Google Search Console

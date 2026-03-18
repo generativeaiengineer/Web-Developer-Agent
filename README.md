@@ -87,7 +87,6 @@ All sites must meet the minimums defined in `.claude/config/quality-standards.js
 ├── builds/                       # Final site outputs
 ├── qa/checklists/                # QA checklists
 ├── scripts/
-│   ├── deploy.sh                 # Deploy to Vercel / Netlify
 │   └── lighthouse-check.sh      # Run Lighthouse audits
 ├── site-builder/                 # React + Vite base scaffold
 └── docs/README.md                # Extended documentation
@@ -105,7 +104,6 @@ All sites must meet the minimums defined in `.claude/config/quality-standards.js
 4. Invoke WD-01 in **Builder** mode to scaffold and build the site
 5. Review `qa/checklists/qa-checklist.md` and sign off
 6. Run `./scripts/lighthouse-check.sh <url>` to verify scores
-7. Run `./scripts/deploy.sh <project-name>` to deploy
 
 ### Run the site-builder dev server
 

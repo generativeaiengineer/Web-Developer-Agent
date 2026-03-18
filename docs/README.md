@@ -28,7 +28,6 @@ WD-01 is an AI-powered web developer agent that scaffolds, builds, and delivers 
 │   └── checklists/
 │       └── qa-checklist.md
 ├── scripts/
-│   ├── deploy.sh
 │   └── lighthouse-check.sh
 ├── site-builder/             # React + Vite + TS scaffold base
 └── docs/
@@ -43,7 +42,6 @@ WD-01 is an AI-powered web developer agent that scaffolds, builds, and delivers 
 4. Build is validated against `qa/checklists/qa-checklist.md`
 5. Lighthouse scores checked via `scripts/lighthouse-check.sh`
 6. Final build output to `builds/<project-name>/`
-7. Deployed via `scripts/deploy.sh`
 
 ## Tech Stack
 

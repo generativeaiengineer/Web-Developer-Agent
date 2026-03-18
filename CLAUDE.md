@@ -48,7 +48,7 @@ Never advance to the next mode without explicit user approval.
 
 - Read `.claude/config/quality-standards.json` for minimum score thresholds on every build
 - Read `qa/checklists/qa-checklist.md` before declaring any build complete
-- Every site must pass all 25 QA checklist items before delivery
+- Every site must pass all 23 QA checklist items before delivery
 
 Key minimums:
 - Lighthouse Performance ≥ 90
@@ -91,8 +91,6 @@ All generated sites use:
 
 ---
 
-## Deployment
+## QA Scripts
 
-- Target server: Digital Ocean VPS + Nginx
-- Deploy script: `scripts/deploy.sh --server [ip] --domain [domain] --build-dir builds/[client]/dist --ssl`
 - Lighthouse audit: `scripts/lighthouse-check.sh https://[domain]`

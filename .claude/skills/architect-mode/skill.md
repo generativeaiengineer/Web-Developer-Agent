@@ -890,7 +890,6 @@ Flag any dependency that would exceed the JS budget before adding it.
 
 ### 6.6 — Nginx Gzip / Caching
 
-(Handled by `scripts/deploy.sh` — confirm it's applied)
 - gzip all text assets (JS, CSS, HTML, SVG, JSON)
 - 1-year cache on hashed static assets
 - No-cache on `index.html`
